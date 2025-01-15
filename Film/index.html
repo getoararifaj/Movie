@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoteka Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Videoteka Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="users.html">Përdoruesit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="film-form">
+            <h2>Regjistro Film</h2>
+            <form>
+                <input type="text" id="title" placeholder="Titulli" required>
+                <input type="text" id="genre" placeholder="Zhanri" required>
+                <input type="text" id="actor" placeholder="Aktori Kryesor" required>
+                <input type="text" id="image" placeholder="URL e Imazhit" required>
+                <button type="submit">Regjistro</button>
+            </form>
+        </section>
+        <section id="film-list">
+            <h2>Lista e Filmave</h2>
+            <input type="text" id="search" placeholder="Kërko...">
+            <div id="films" class="grid-container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Videoteka Online. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
